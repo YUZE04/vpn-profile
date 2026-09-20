@@ -85,6 +85,16 @@ proxies:
 
 proxy-groups:
   - name: "PROXY"
+    type: select
+    proxies:
+      - "AUTO"
+      - YZ-US-8443
+      - YZ-US-2053
+      - YZ-US-2083
+      - YZ-US-2087
+      - YZ-US-2096
+      - DIRECT
+  - name: "AUTO"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
     interval: 300
